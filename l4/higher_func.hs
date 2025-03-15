@@ -23,3 +23,4 @@ main = do
     print(filter isEven [1, 2, 3, 4, 5])
     print(foldl (*) 2 [1, 2, 3, 4, 5])
     print(sort [5, 4, 3, 2, 1,7,4,2,90,43,535,123,446,223])
+    print(takeWhile (<3) [1,2,3,4,5])
