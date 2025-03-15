@@ -1,5 +1,7 @@
 isSmall :: Thing -> Bool
 listOfThings :: [Thing]
+john :: Person
+getAge :: Person -> Int
 
 data Thing = Shoe
            | Ship
@@ -8,7 +10,12 @@ data Thing = Shoe
            | King
   deriving Show
 
+data Person = Person String Int Thing
+  deriving Show
+
 listOfThings = [Shoe, SealingWax, King, Cabbage, Shoe, Ship]
+john = Person "John" 25 Shoe
+getAge (Person _ age _) = age
 
 isSmall Shoe = True
 isSmall Ship = False
@@ -17,3 +24,4 @@ isSmall _ = False
 
 main = do
     print(filter isSmall listOfThings)
+    print( getAge john )
