@@ -17,10 +17,9 @@ listOfThings = [Shoe, SealingWax, King, Cabbage, Shoe, Ship]
 john = Person "John" 25 Shoe
 getAge (Person _ age _) = age
 
-isSmall Shoe = True
+
 isSmall Ship = False
-isSmall SealingWax = True
-isSmall _ = False
+isSmall _ = True
 
 main = do
     print(filter isSmall listOfThings)
