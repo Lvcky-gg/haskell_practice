@@ -15,6 +15,7 @@ main = do
     print(isUpper 'a')
     print(isLower 'a')
     print(isLower 'A')
+    print(words "hey these are the words in this sentence")
     print(ord 'a')
     print(chr 97)
   
