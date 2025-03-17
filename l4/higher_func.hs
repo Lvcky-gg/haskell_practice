@@ -12,6 +12,27 @@
 --scanl
 --scanr
 --sort
+-- MORE FUNCS:
+-- head
+-- tail
+-- init
+-- last
+-- length
+-- null
+-- reverse
+-- elem
+-- maximum
+-- minimum
+-- sum
+-- product
+-- concat
+-- and
+-- or
+-- all
+-- any
+-- splitAt
+-- take
+-- drop
 import Data.List (sort)
 inc :: Int -> Int
 isEven :: Int -> Bool
