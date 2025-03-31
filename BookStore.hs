@@ -12,4 +12,17 @@ data BookReview = BookReview BookInfo CustomerId String
 
 data BetterReview = BetterReview BookInfo CustomerId ReviewBody
 
+myInfo :: BookInfo
 myInfo = Book 987192 "Algebra" ["Richard Bird", "Oege de Moor"]
+
+type CardHolder = String
+
+type CardNumber = String
+
+type Address = [String]
+
+data BillingInfo
+  = CreditCard CardNumber CardHolder Address
+  | CashOnDelivery
+  | Invoice CustomerId
+  deriving (Show)
